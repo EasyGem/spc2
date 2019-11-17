@@ -12,8 +12,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: `Sea Plast Construction – компания, целью которой является предоставление комплексных решений для морского сектора.
-        Наша компания ориентирована на оказание полного спектра услуг по проектированию, производству и установке оборудования, изготовленного из термопластов, для использования в морской сфере.`
+        content: `Sea Plast Construction – компания, целью которой является предоставление комплексных решений для морского сектора. Наша компания ориентирована на оказание полного спектра услуг по проектированию, производству и установке оборудования, изготовленного из термопластов, для использования в морской сфере.`
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -50,7 +49,10 @@ module.exports = {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    baseURL: 'http://4dea.ru',
+    browserBaseURL: 'http://4dea.ru'
+  },
   /*
    ** Build configuration
    */
