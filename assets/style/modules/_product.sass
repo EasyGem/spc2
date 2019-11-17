@@ -1,0 +1,105 @@
+.product
+  padding-top: 88px
+  padding-bottom: 140px
+  &__images-wrapper
+    flex: 0 0 490px
+  &__image
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center center
+    &:nth-child(1)
+      width: 490px
+      height: 300px
+    &:nth-child(2)
+      width: 330px
+      height: 200px
+      margin-top: 40px
+  &__info
+    flex: 1
+    padding-left: 100px
+    display: flex
+    flex-direction: column
+    p
+      margin-top: 28px
+      line-height: 1.5
+      color: $text-primary-l-1
+  &__actions
+    margin-top: 60px
+    .btn--text
+      font-size: 14px
+      text-decoration: underline
+  &__columns-wrapper
+    margin: 100px -30px 0 -30px
+    flex-wrap: nowrap
+  &__info-column
+    flex: 0 0 calc(100% / 3 - 24px)
+    margin: 0 20px 32px
+    h3
+      font-size: 24px 
+      margin-bottom: 20px
+    p
+      color: $text-primary-l-1
+      line-height: 1.5
+      font-weight: 200
+      margin-bottom: 8px
+      display: flex
+      .dash
+        background-color: $text-primary-l-1
+        margin-top: 14px
+
+  @include respond-to(xl)
+    &__images-wrapper
+      flex: 0 0 200px
+    &__image
+      &:nth-child(1)
+        width: 400px
+        height: 280px
+      &:nth-child(2)
+        width: 260px
+        height: 180px
+    &__info
+      padding-left: 60px
+    &__info-column
+      flex: 0 0 calc(100% / 2 - 64px)
+    &__columns-wrapper
+      margin: 100px -30px 0 -30px
+      flex-wrap: wrap
+    
+  @include respond-to(lg)
+    padding-top: 40px
+    &__images-wrapper
+      flex: 0 0 100%
+      margin-bottom: 40px
+      display: flex
+      align-items: flex-end
+    &__image
+      &:nth-child(1)
+        height: 240px
+      &:nth-child(2)
+        height: 160px
+        width: 240px
+        margin-left: 32px
+    &__info
+      padding-left: 0px
+    &__info-column
+      flex: 0 0 100%
+      margin: 0 0 32px 0
+    &__columns-wrapper
+      margin: 100px 0 0 0
+      flex-wrap: wrap
+
+  @include respond-to(md)
+    padding-bottom: 60px
+    &__images-wrapper
+      display: none
+
+  @include respond-to(sm)
+    &__actions
+      margin-top: 40px
+      display: flex
+      flex-direction: column
+      align-items: center
+      &>.btn
+        width: 100%

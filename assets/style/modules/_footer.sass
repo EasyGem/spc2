@@ -1,0 +1,51 @@
+.footer
+  margin-top: 200px
+  padding: 80px 0 60px 0
+  background-color: $text-primary
+  &__menu
+    margin: 60px -20px 0
+  &-menu__item
+    margin: 0 20px
+    color: $text-primary-l-2
+    font-weight: 200
+  
+  &__small-menu
+    margin: 24px -12px 0
+  &-small-menu__item
+    margin: 0 12px
+    font-size: 13px
+    color: $text-primary-l-1
+    font-weight: 200
+
+  &__bottom
+    margin-top: 100px
+    font-weight: 200
+    p 
+      font-size: 14px
+      color: $text-primary-l-1
+      margin-bottom: 8px
+
+  @include respond-to(lg)
+    &__menu
+      margin: 60px 0 0 0
+      flex-direction: column
+      flex: 1
+    &-menu__item
+      margin: 12px 0
+    
+    &__small-menu
+      margin: 60px 0 0 32px
+      flex-direction: column
+      flex: 1
+    &-small-menu__item
+      margin: 8px 0
+      font-size: 14px
+
+  @include respond-to(md)
+    margin-top: 100px
+    &__menu
+      flex: unset
+    
+    &__small-menu
+      margin: 32px 0 0 0
+      flex: unset

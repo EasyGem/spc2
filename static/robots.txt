@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /
+
+Host: seaplastcon.com
+
+Sitemap: http://seaplastcon.com/sitemap.xml

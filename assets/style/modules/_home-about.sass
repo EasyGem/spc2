@@ -1,0 +1,26 @@
+.home-about
+  &__row
+  &__title-block
+    background-color: $text-primary
+    padding: 60px 200px 100px 0
+    color: $text-secondary
+    max-width: 700px
+    width: 100%
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: calc(-100vw + 1px)
+      height: 100%
+      width: 100vw
+      background-color: $text-primary
+
+  @include respond-to(md)
+    background-color: $text-primary
+    &__title-block
+      padding: 60px 60px 100px 0
+
+  @include respond-to(sm)
+    &__title-block
+      padding-right: 0

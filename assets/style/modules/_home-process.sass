@@ -1,0 +1,32 @@
+.home-process
+  padding: 80px 0 140px 0
+  background-color: #FAFAFA
+  &__steps-wrapper
+    margin: -12px -8px
+    margin-top: 80px
+  &__step
+    padding-left: 44px
+    margin: 12px 8px
+    width: calc(100% / 3 - 16px)
+    position: relative
+    .step-num
+      position: absolute
+      color: $text-secondary-d-1
+      text-align: right
+      right: calc(100% - 36px)
+  &-step__desc
+    font-size: 16px
+    color: $text-primary-l-2
+    margin-top: 24px
+
+  @include respond-to(lg)
+    &__steps-wrapper
+      margin: -12px 0
+      margin-top: 40px
+    &__step
+      margin: 32px 0 12px 0
+      width: 100%
+    &-step__desc
+      margin-top: 16px
+
+
